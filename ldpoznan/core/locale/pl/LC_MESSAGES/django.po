@@ -1,0 +1,110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-29 01:03+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2)\n"
+
+#: templates/core/index.html:11
+msgid "14 &ndash; 15 December 2013"
+msgstr "14 &ndash; 15 grudnia 2013"
+
+#: templates/core/index.html:11
+msgid "ZOO Coworking, Zwierzyniecka 20"
+msgstr ""
+
+#: templates/core/index.html:29
+msgid ""
+"<a href=\"http://rpg.cs.put.poznan.pl\" target=\"_blank\">Ruch Projektantów "
+"Gier</a> will be holding first <a href=\"http://ludumdare.com/compo\" target="
+"\"_blank\">Ludum Dare</a> real world gathering in Poznań, Poland!"
+msgstr ""
+"<a href=\"http://rpg.cs.put.poznan.pl\" target=\"_blank\">Ruch Projektantów "
+"Gier</a> zaprasza na pierwsze poznańskie spotkanie z okazji 28. edycji game "
+"jamu <a href=\"http://ludumdare.com/compo\" target=\"_blank\">Ludum Dare</a>!"
+
+#: templates/core/index.html:32
+msgid "Wait, what's a game jam?"
+msgstr "Czym jest game jam?"
+
+#: templates/core/index.html:34
+msgid ""
+"The idea is simple &mdash; programmers, designers artists meet together to "
+"make a game in 48 hours."
+msgstr ""
+"Idea jest prosta &mdash; programiści, projektanci, graficy zbierają się "
+"razem, aby w 48 godzin stworzyć od podstaw grę."
+
+#: templates/core/index.html:37
+msgid "When?"
+msgstr "Kiedy?"
+
+#: templates/core/index.html:38
+msgid "Weekend of 14 &ndash; 15 December 2013."
+msgstr "Weekend 14 &ndash; 15 grudnia 2013"
+
+#: templates/core/index.html:40
+msgid "Where?"
+msgstr "Gdzie?"
+
+#: templates/core/index.html:41
+msgid ""
+"The gathering will take place in <a href=\"http://coworkingzoo.pl\" target="
+"\"_blank\">ZOO Coworking</a> on the Zwierzyniecka 20 street in Poznań, "
+"Poland [<a href=\"https://www.google.com/maps/preview#!"
+"q=52.408413,16.908245&amp;data=!1m4!1m3!1d271!2d16.908515!3d52.408386!2m1!"
+"1e3!4m14!2m13!1m12!3m8!1m3!1d152!2d16.908515!3d52.408386!3m2!1i1024!2i768!"
+"4f13.1!4m2!3d52.408413!4d16.908245&amp;fid=7\" target=\"_blank\">map</a>]. "
+"We will have a place to sit comfortably with your laptop, as well as free "
+"WiFi and some tea and coffee."
+msgstr ""
+"Spotkanie odbędzie się w <a href=\"http://coworkingzoo.pl\" target=\"_blank"
+"\">ZOO Coworking</a> przy ulicy Zwierzynieckiej 20 w Poznaniu [<a href="
+"\"https://www.google.com/maps/preview#!q=52.408413,16.908245&amp;data=!1m4!"
+"1m3!1d271!2d16.908515!3d52.408386!2m1!1e3!4m14!2m13!1m12!3m8!1m3!1d152!"
+"2d16.908515!3d52.408386!3m2!1i1024!2i768!4f13.1!4m2!3d52.408413!"
+"4d16.908245&amp;fid=7\" target=\"_blank\">mapa</a>]. Na miejscu znajdą się "
+"stanowiska gdzie można wygodnie usiąść i położyć laptopa, a także WiFi oraz "
+"kawa i herbata."
+
+#: templates/core/index.html:44
+msgid "Registration (optional)"
+msgstr "Rejestracja (nieobowiązkowa)"
+
+#: templates/core/index.html:46
+msgid ""
+"Registration will help us estimate how many people we should expect.\n"
+"If you're not sure yet or just don't want to register &mdash; dont worry. "
+"Just bring your laptop and see for yourself, how it is to make a game in 48 "
+"hours!"
+msgstr ""
+"Rejestracja pomoże nam oszacować, ilu osób możemy się spodziewać na "
+"wydarzeniu. Nie jesteś jeszcze zdecydowany/nie chcesz się rejestrować? Żaden "
+"problem &mdash; po prostu przyjdź ze swoim laptopem i przekonaj się, jak to "
+"jest samodzielnie stworzyć grę w 48 godzin!"
+
+#: templates/core/index.html:52
+msgid "Contact"
+msgstr "Kontakt"
+
+#: templates/core/index.html:54
+msgid ""
+"Any questions? Just send a mail: <a href=\"mailto:krzysztof@skoracki.net?"
+"subject=LD28\">krzysztof@skoracki.net</a>."
+msgstr ""
+"Masz jakieś pytania/uwagi? Pisz śmiało: <a href=\"mailto:krzysztof@skoracki."
+"net?subject=LD28\">krzysztof@skoracki.net</a>."

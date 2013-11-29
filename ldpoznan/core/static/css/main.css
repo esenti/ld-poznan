@@ -94,7 +94,7 @@ input
 {
 	margin: auto;
 	margin-top: 40px;
-	width: 930px;
+	width: 880px;
 	padding: 3.5em;
 	border: 1px solid #222222;
 	background: rgba(0, 0, 0, 0.95);
@@ -104,8 +104,35 @@ input
 hr
 {
 	border: none;
-	background: #ffffff;
+	border-top: 1px dashed #ffffff;
+	background: none;
 	height: 1px;
 	width: 100%;
 	margin: 1em;
+}
+
+.language-button
+{
+	display: inline;
+	border: none;
+	background: none;
+	cursor: pointer;
+	color: #777777;
+}
+
+.language-button:HOVER
+{
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+#languages-box
+{
+	margin-top: 1.0em;
+	float: right;
+}
+
+#title-box
+{
+	float: left;
 }

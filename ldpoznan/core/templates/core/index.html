@@ -1,35 +1,56 @@
 {% extends "core/base.html" %}
 
+{% load i18n %}
+
 {% block title %}Ludum Dare 28{% endblock %}
 
 {% block content %}
-<h1>Ludum Dare 28 &mdash; Poznań</h1>
-<em>14 &ndash; 15 grudnia 2013</em>, ZOO Coworking, Zwierzyniecka 20
 
+<div id="title-box">
+	<h1>Ludum Dare 28 &mdash; Poznań</h1>
+	<em>{% blocktrans %}14 &ndash; 15 December 2013{% endblocktrans %}</em>, {% blocktrans %}ZOO Coworking, Zwierzyniecka 20{% endblocktrans %}
+</div>
+
+<div id="languages-box">
+	{% get_language_info_list for LANGUAGES as languages %}
+		{% for language in languages %}
+		<form action="{% url 'set_language' %}" method="post">
+			{% csrf_token %}
+			<input name="next" type="hidden" value="{{ redirect_to }}" />
+			<input name="language" type="hidden" value="{{ language.code }}" />
+			<input class="language-button" type="submit" value="{{ language.name_local }}" />
+		</form>
+	{% endfor %}
+</div>
+
+<div class="clear"></div>
 <hr>
-
 <p>
-<a href="http://rpg.cs.put.poznan.pl" target="_blank">Ruch Projektantów Gier</a> zaprasza na pierwsze poznańskie spotkanie z okazji 28. edycji game jamu <a href="http://ludumdare.com/compo" target="_blank">Ludum Dare</a>!
-</p>
-<h2>Czym jest game jam?</h2>
-<p>
-Idea jest prosta &mdash; programiści, projektanci, graficy zbierają się razem, aby w 48 stworzyć od podstaw grę.
+{% blocktrans %}<a href="http://rpg.cs.put.poznan.pl" target="_blank">Ruch Projektantów Gier</a> will be holding first <a href="http://ludumdare.com/compo" target="_blank">Ludum Dare</a> real world gathering in Poznań, Poland!{% endblocktrans %}
 </p>
 
-<h2>Kiedy?</h2>
-<p>Weekend 14 &ndash; 15 grudnia 2013.</p>
-[godziny?]
-<h2>Gdzie?</h2>
-<p>Spotkanie odbędzie się w <a href="http://coworkingzoo.pl" target="_blank">ZOO Coworking</a> przy ulicy Zwierzynieckiej 20 w Poznaniu [<a href="https://www.google.com/maps/preview#!q=52.408413%2C16.908245&data=!1m4!1m3!1d271!2d16.908515!3d52.408386!2m1!1e3!4m14!2m13!1m12!3m8!1m3!1d152!2d16.908515!3d52.408386!3m2!1i1024!2i768!4f13.1!4m2!3d52.408413!4d16.908245&fid=7" target="_blank">mapa</a>]. Na miejscu znajdą się stanowiska gdzie można wygodnie usiąść i położyć laptopa, a także WiFi oraz kawa i herbata.</p>
+<h2>{% blocktrans %}Wait, what's a game jam?{% endblocktrans %}</h2>
+<p>
+{% blocktrans %}The idea is simple &mdash; programmers, designers artists meet together to make a game in 48 hours.{% endblocktrans %}
+</p>
 
-<h2>Rejestracja (nieobowiązkowa)</h2>
-<p>Rejestracja pomoże nam oszacować, ilu osób możemy się spodziewać na wydarzeniu.
-Nie jesteś jeszcze zdecydowany/nie chcesz się rejestrować? Żaden problem &mdash; po prostu przyjdź ze swoim laptopem i przekonaj się, jak to jest samodzielnie stworzyć grę w 48 godzin!
+<h2>{% blocktrans %}When?{% endblocktrans %}</h2>
+<p>{% blocktrans %}Weekend of 14 &ndash; 15 December 2013.{% endblocktrans %}</p>
 
+<h2>{% blocktrans %}Where?{% endblocktrans %}</h2>
+<p>{% blocktrans %}The gathering will take place in <a href="http://coworkingzoo.pl" target="_blank">ZOO Coworking</a> on the Zwierzyniecka 20 street in Poznań, Poland [<a href="https://www.google.com/maps/preview#!q=52.408413,16.908245&amp;data=!1m4!1m3!1d271!2d16.908515!3d52.408386!2m1!1e3!4m14!2m13!1m12!3m8!1m3!1d152!2d16.908515!3d52.408386!3m2!1i1024!2i768!4f13.1!4m2!3d52.408413!4d16.908245&amp;fid=7" target="_blank">map</a>]. We will have a place to sit comfortably with your laptop, as well as free WiFi and some tea and coffee.{% endblocktrans %}</p>
+
+
+<h2>{% blocktrans %}Registration (optional){% endblocktrans %}</h2>
+<p>
+{% blocktrans %}Registration will help us estimate how many people we should expect.
+If you're not sure yet or just don't want to register &mdash; dont worry. Just bring your laptop and see for yourself, how it is to make a game in 48 hours!{% endblocktrans %}
+</p>
 <p>[tu będzie formularz rejestracyj]
 </p>
 
-<h2>Kontakt</h2>
-<p>Masz jakieś pytania/uwagi? Pisz śmiało: <a href="mailto:krzysztof@skoracki.net?subject=LD28">krzysztof@skoracki.net</a>.
+<h2>{% blocktrans %}Contact{% endblocktrans %}</h2>
+<p>
+{% blocktrans %}Any questions? Just send a mail: <a href="mailto:krzysztof@skoracki.net?subject=LD28">krzysztof@skoracki.net</a>.{% endblocktrans %}
 </p>
 {% endblock %}
