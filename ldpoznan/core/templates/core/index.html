@@ -46,9 +46,15 @@
 {% blocktrans %}Registration will help us estimate how many people we should expect.
 If you're not sure yet or just don't want to register &mdash; dont worry. Just bring your laptop and see for yourself, how it is to make a game in 48 hours!{% endblocktrans %}
 </p>
-<p>[tu będzie formularz rejestracyj]
+<hr>
+<p>
+	<form id="form" action="{% url 'index' %}#form" method="post">
+		{% csrf_token %}
+		{{ form.as_p }}
+		<input type="submit" value="{% trans 'Submit' %}" />
+	</form>
 </p>
-
+<hr>
 <h2>{% blocktrans %}Contact{% endblocktrans %}</h2>
 <p>
 {% blocktrans %}Any questions? Just send a mail: <a href="mailto:krzysztof@skoracki.net?subject=LD28">krzysztof@skoracki.net</a>.{% endblocktrans %}

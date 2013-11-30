@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-29 01:03+0100\n"
+"POT-Creation-Date: 2013-11-30 01:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,6 +18,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2)\n"
+
+#: views.py:6
+msgid "Name"
+msgstr "Nazwa"
+
+#: views.py:7
+msgid "Mail"
+msgstr ""
 
 #: templates/core/index.html:11
 msgid "14 &ndash; 15 December 2013"
@@ -98,10 +106,14 @@ msgstr ""
 "jest samodzielnie stworzyć grę w 48 godzin!"
 
 #: templates/core/index.html:52
+msgid "Submit"
+msgstr "Wyślij"
+
+#: templates/core/index.html:57
 msgid "Contact"
 msgstr "Kontakt"
 
-#: templates/core/index.html:54
+#: templates/core/index.html:59
 msgid ""
 "Any questions? Just send a mail: <a href=\"mailto:krzysztof@skoracki.net?"
 "subject=LD28\">krzysztof@skoracki.net</a>."
