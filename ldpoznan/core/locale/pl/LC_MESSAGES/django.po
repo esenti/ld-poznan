@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-30 21:51+0100\n"
+"POT-Creation-Date: 2013-12-02 23:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,30 +50,22 @@ msgstr ""
 "jamu <a href=\"http://ludumdare.com/compo\" target=\"_blank\">Ludum Dare</a>!"
 
 #: templates/core/index.html:32
-msgid "Wait, what's a game jam?"
-msgstr "Czym jest game jam?"
-
-#: templates/core/index.html:34
-msgid ""
-"The idea is simple &mdash; programmers, designers artists meet together to "
-"make a game in 48 hours."
-msgstr ""
-"Idea jest prosta &mdash; programiści, projektanci, graficy zbierają się "
-"razem, aby w 48 godzin stworzyć od podstaw grę."
-
-#: templates/core/index.html:37
 msgid "When?"
 msgstr "Kiedy?"
 
-#: templates/core/index.html:38
+#: templates/core/index.html:33
 msgid "Weekend of 14 &ndash; 15 December 2013."
 msgstr "Weekend 14 &ndash; 15 grudnia 2013"
 
-#: templates/core/index.html:40
+#: templates/core/index.html:34
+msgid "10AM &ndash; 9PM (both days)"
+msgstr "10:00 &ndash; 21:00 (w oba dni)"
+
+#: templates/core/index.html:36
 msgid "Where?"
 msgstr "Gdzie?"
 
-#: templates/core/index.html:41
+#: templates/core/index.html:37
 msgid ""
 "The gathering will take place in <a href=\"http://coworkingzoo.pl\" target="
 "\"_blank\">ZOO Coworking</a> on the Zwierzyniecka 20 street in Poznań, "
@@ -93,31 +85,61 @@ msgstr ""
 "stanowiska gdzie można wygodnie usiąść i położyć laptopa, a także WiFi oraz "
 "kawa i herbata."
 
-#: templates/core/index.html:44
+#: templates/core/index.html:40
 msgid "Registration (optional)"
 msgstr "Rejestracja (nieobowiązkowa)"
 
-#: templates/core/index.html:46
+#: templates/core/index.html:42
 msgid ""
 "Registration will help us estimate how many people we should expect.\n"
 "If you're not sure yet or just don't want to register &mdash; dont worry. "
-"Just bring your laptop and see for yourself, how it is to make a game in 48 "
-"hours!"
+"Just bring your laptop and see for yourself that creating games is a lot of "
+"fun!"
 msgstr ""
 "Rejestracja pomoże nam oszacować, ilu osób możemy się spodziewać na "
 "wydarzeniu. Nie jesteś jeszcze zdecydowany/nie chcesz się rejestrować? Żaden "
-"problem &mdash; po prostu przyjdź ze swoim laptopem i przekonaj się, jak to "
-"jest samodzielnie stworzyć grę w 48 godzin!"
+"problem &mdash; po prostu przyjdź ze swoim laptopem i przekonaj się, że "
+"tworzenie gier może być niezłą zabawą!"
 
-#: templates/core/index.html:58
+#: templates/core/index.html:54
 msgid "Submit"
 msgstr "Wyślij"
 
-#: templates/core/index.html:66
+#: templates/core/index.html:63
+msgid "Wait, what's a game jam?"
+msgstr "Czym jest game jam?"
+
+#: templates/core/index.html:65
+msgid ""
+"The idea is simple &mdash; programmers, designers, artists meet together to "
+"make a game in a short time.\n"
+"Ludum Dare is divided into two categories:\n"
+"<ul>\n"
+"<li>48h compo &mdash; 2 days, you have to work on your game by yourself, all "
+"content has to be created during the duration of the event</li>\n"
+"<li>72h jam &mdash; 3 days, teams of any size allowed, you can use freely "
+"available content like sprites</li>\n"
+"</ul>\n"
+"For detailed rules, see <a href=\"http://www.ludumdare.com/compo/rules/\" "
+"target=\"_blank\">official website</a>."
+msgstr ""
+"Idea jest prosta &mdash; programiści, projektanci, graficy spotykają się, "
+"aby w krótkim czasie stworzyć kompletną grę. Ludum Dare dzieli się na dwie "
+"kategorie:\n"
+"<ul>\n"
+"<li>48h compo &mdash; 2 dni, każdy tworzy grę indywidualnie, wszystkie "
+"grafiki itd. muszą zostać stworzone w trakcie trwania wydarzenia</li>\n"
+"<li>72h jam &mdash; 3 dni, dozwolone zespoły o dowolnej wielkości, możliwość "
+"użycia dostępnych materiałów takich jak sprite'y</li>\n"
+"</ul>\n"
+"Szczegółowy opis zasad znajduje się na <a href=\"http://www.ludumdare.com/"
+"compo/rules/\" target=\"_blank\">oficjalnej stronie</a>."
+
+#: templates/core/index.html:74
 msgid "Contact"
 msgstr "Kontakt"
 
-#: templates/core/index.html:68
+#: templates/core/index.html:76
 msgid ""
 "Any questions? Just send a mail: <a href=\"mailto:krzysztof@skoracki.net?"
 "subject=LD28\">krzysztof@skoracki.net</a>."
