@@ -137,8 +137,17 @@ input[type="submit"]:HOVER
 	float: left;
 }
 
-input[type="text"], input[type="email"]
+input[type="text"], input[type="email"], textarea
 {
 	border: 1px solid #000000;
 	border-radius: 0px;
+	width: 15em;
+	font-family: Uni;
+	padding: 0.5em;
+	font-size: 1em;
+}
+
+table
+{
+	margin: auto;
 }

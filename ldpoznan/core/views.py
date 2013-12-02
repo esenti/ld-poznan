@@ -1,11 +1,11 @@
 from django.shortcuts import render, redirect
-from django import forms
-from django.utils.translation import ugettext_lazy as _
-from django.contrib.auth.models import User
+from django.forms import ModelForm
+from core.models import Registration
 
-class RegistrationForm(forms.Form):
-	name = forms.CharField(label=_('Name'))
-	mail = forms.EmailField(label=_('Mail'), required=False)
+
+class RegistrationForm(ModelForm):
+	class Meta:
+		model = Registration
 
 
 def index(request):
@@ -13,7 +13,7 @@ def index(request):
 	if request.method == 'POST':
 		form = RegistrationForm(request.POST)
 		if form.is_valid():
-			user = User.objects.create_user(form.cleaned_data['name'], form.cleaned_data['mail'], 'pass')
+			form.save()
 			return redirect('index')
 	else:
 		form = RegistrationForm()

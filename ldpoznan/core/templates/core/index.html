@@ -47,13 +47,21 @@
 If you're not sure yet or just don't want to register &mdash; dont worry. Just bring your laptop and see for yourself, how it is to make a game in 48 hours!{% endblocktrans %}
 </p>
 <hr>
+
 <p>
-	<form id="form" action="{% url 'index' %}#form" method="post">
+	<table id="form">
+	<form action="{% url 'index' %}#form" method="post">
 		{% csrf_token %}
-		{{ form.as_p }}
-		<input type="submit" value="{% trans 'Submit' %}" />
+		{{ form.as_table }}
+		<tr>
+			<td>
+				<input type="submit" value="{% trans 'Submit' %}" />
+			</td>
+		</rd>
 	</form>
+	</table>
 </p>
+
 <hr>
 <h2>{% blocktrans %}Contact{% endblocktrans %}</h2>
 <p>
